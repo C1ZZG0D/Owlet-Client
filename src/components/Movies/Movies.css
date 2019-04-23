@@ -1,0 +1,53 @@
+table, td {
+    padding: 15px;
+    padding-right: 105px;
+    border-collapse: collapse;
+    background-color: black;
+    color: goldenrod;
+    opacity: 0.85;
+    font-family: Roboto;
+    position: relative;
+    top: 0px;
+
+}
+
+thead {
+    background-color: whitesmoke;
+    border-bottom: 2px solid darkslategray;
+    background-color: black;
+    color: goldenrod;
+    opacity: 0.85;
+    font-family: Roboto;
+    position: relative;
+    top: 0px;
+    bottom: 100px;
+}
+
+tr {
+    border-bottom: 1px solid lightgray;
+    background-color: black;
+    color: goldenrod;
+    opacity: 0.85;
+    font-family: Roboto;
+    position: relative;
+    top: 0px;
+    bottom: 100px;
+}
+
+table {
+    margin: 25vh auto;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    bottom: 100px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 60px;
+    color: goldenrod;
+    position: relative;
+    left: 10em;
+    
+    
+}

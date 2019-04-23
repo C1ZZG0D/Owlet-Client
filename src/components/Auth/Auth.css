@@ -1,0 +1,30 @@
+.card-like {
+    padding: 1em;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 15px;
+    width: 15vw;
+    margin : 15vh auto;
+    opacity: 0.55;
+    max-width: 15vw;
+    min-width: 10vw;
+}
+
+/* Set a max and min width in vw/vh to create better scaling for different page sizes */
+.card-like:hover {
+    padding: 1em;
+    background-color: black;
+    color:goldenrod;
+    border-radius: 15px;
+    width: 15vw;
+    margin : 15vh auto;
+    opacity: 0.85;
+    max-width: 15vw;
+    min-width: 10vw;
+    
+}
+
+.display-block {
+    display: block;
+
+}

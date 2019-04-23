@@ -1,0 +1,28 @@
+.left {
+    position:absolute;
+    left:0; 
+    top:0px; 
+    bottom: 0;
+    width: 120px;
+    background-color:  rgb(44, 32, 2);
+    opacity: 0.5;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 22px;
+    color:white;
+    
+}
+
+.left:hover {
+    background-color: rgb(44, 32, 2);
+    font-family: arial;
+    font-weight: normal;
+    font-size: 22px;
+    opacity: 0.75;
+    color: white;
+    box-shadow: 500px 500px 500px 500px, red;
+    }
+
+
+
+

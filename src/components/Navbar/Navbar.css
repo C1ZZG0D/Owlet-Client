@@ -1,0 +1,27 @@
+nav {
+    margin: 0;
+    background-color: black;
+    color: goldenrod;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+.nav-img {
+    height: 100%;
+    background-color: goldenrod;
+    opacity: 0.25;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    left: 20px;
+}
+
+.nav-img:hover {
+    height: 100%;
+    background-color: goldenrod;
+    opacity: 0.5;
+    border-radius: 75%;
+    z-index: 2;
+}
