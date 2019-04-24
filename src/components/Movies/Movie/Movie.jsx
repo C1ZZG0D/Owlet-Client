@@ -3,13 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
 
 var clickStyles = {
-    button: {
+    edit: {
       fontFamily: 'Roboto',
       // color: 'warning',
       // backgroundColor: 'black',
       
-    }
+    },
+
+    delete: {
+fontFamily: 'Roboto',
+
   }
+}
 
   
 
@@ -22,7 +27,8 @@ const Movie = (props) => {
              <td>{ props.movie.contentrating }</td>
              <td>{ props.movie.runtime }</td>
              <td>{ props.movie.description }</td>
-             <Button style={clickStyles.button} color='warning'>Edit </Button>
+             <Button style={clickStyles.edit} color='warning'>Edit </Button>
+             <Button style={clickStyles.delete} color='danger'>Delete </Button>
          </tr>
      )
 }
