@@ -75,8 +75,8 @@ let signupFields = !this.state.login ? (
             <input className="display-block" type="password"  minlength="5" required name="password" value= 
             {this.state.password} onChange={(e) => this.handleChange(e)} />
              { signupFields }
-            <button onClick={(e) => this.loginToggle (e)}>Login/Sign Up</button>
-            <button type="submit">Submit</button>
+            <button color = "warning" onClick={(e) => this.loginToggle (e)}>Login/Sign Up</button>
+            <button color = "warning" type="submit">Submit</button>
             </form>
         )
     }
