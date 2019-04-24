@@ -19,7 +19,7 @@ const Movie = (props) => {
              <td>{ props.movie.genre }</td>
              <td>{ props.movie.contentrating }</td>
              <td>{ props.movie.runtime }</td>
-             <td>{ props.movie.description }</td>
+             <td scrollY>{ props.movie.description }</td>
              <Button style={clickStyles.delete} color='warning'>Edit </Button>
              <Button style={clickStyles.delete} color='danger'>Delete </Button>
          </tr>
