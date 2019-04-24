@@ -1,10 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
 
-var tbodyStyles = {
-    tbody: {
-    overflow: 'auto',
-  } }
+var clickStyles = {
+    button: {
+      fontFamily: 'Roboto',
+      // color: 'warning',
+      // backgroundColor: 'black',
+      
+    }
+  }
 
   
 

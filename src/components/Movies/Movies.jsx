@@ -73,14 +73,11 @@ var h1Styles= {
     
 } };
 
-var clickStyles = {
-  button: {
-    fontFamily: 'Roboto',
-    // color: 'warning',
-    // backgroundColor: 'black',
-    
-  }
-}
+
+var tbodyStyles = {
+  tbody: {
+  overflow: 'auto',
+} }
 
 /************************************************************************************************************
                                       xxxxxxxxxxxxxx
