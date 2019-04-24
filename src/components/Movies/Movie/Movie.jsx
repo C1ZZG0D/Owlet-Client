@@ -13,7 +13,7 @@ fontFamily: 'Roboto',
 
 const Movie = (props) => {
      return (
-         <tr>
+         <tr scrollY>
              <td>{ props.movie.name }</td>
              <td>{ props.movie.rating }</td>
              <td>{ props.movie.genre }</td>
