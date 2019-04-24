@@ -1,6 +1,8 @@
 import React from 'react';
 import './Movies.css';
 import Movie from './Movie/Movie';
+import { Button } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import APIURL from '../../helpers/environment';
 
 
@@ -71,6 +73,20 @@ var h1Styles= {
     
 } };
 
+var clickStyles = {
+  button: {
+    fontFamily: 'Roboto',
+    // color: 'warning',
+    // backgroundColor: 'black',
+    
+  }
+}
+
+var tbodyStyles = {
+  tbody: {
+  overflow: 'auto',
+} }
+
 /************************************************************************************************************
                                       xxxxxxxxxxxxxx
  ************************************ RADIUM STYLING **********************************************************
@@ -136,7 +152,7 @@ class Movies extends React.Component {
            </thead>
            <tbody>
             { movieRows }
-           </tbody>
+           </tbody> <Button style={clickStyles.button} color='warning'>Edit </Button>
            </table>
            </div>
         )

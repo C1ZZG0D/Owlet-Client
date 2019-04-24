@@ -23,7 +23,8 @@ const Logout = (props) => {
     return (
         <img style={logoutStyles.img} src=
         {logoutPic} alt="Logout" onClick=
-        {props.logout} />
+        {props.logout}
+         />
     )
 }
 
