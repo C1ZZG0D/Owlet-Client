@@ -1,5 +1,12 @@
 import React from 'react';
 
+var tbodyStyles = {
+    tbody: {
+    overflow: 'auto',
+  } }
+
+  
+
 const Movie = (props) => {
      return (
          <tr>
@@ -9,6 +16,7 @@ const Movie = (props) => {
              <td>{ props.movie.contentrating }</td>
              <td>{ props.movie.runtime }</td>
              <td>{ props.movie.description }</td>
+             <Button style={clickStyles.button} color='warning'>Edit </Button>
          </tr>
      )
 }

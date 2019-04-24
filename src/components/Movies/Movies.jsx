@@ -82,11 +82,6 @@ var clickStyles = {
   }
 }
 
-var tbodyStyles = {
-  tbody: {
-  overflow: 'auto',
-} }
-
 /************************************************************************************************************
                                       xxxxxxxxxxxxxx
  ************************************ RADIUM STYLING **********************************************************
@@ -152,7 +147,7 @@ class Movies extends React.Component {
            </thead>
            <tbody>
             { movieRows }
-           </tbody> <Button style={clickStyles.button} color='warning'>Edit </Button>
+           </tbody>
            </table>
            </div>
         )
