@@ -4,6 +4,7 @@ import Movie from './Movie/Movie';
 import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIURL from '../../helpers/environment';
+import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
 
 
 /****************************************************************************************************************
@@ -133,7 +134,7 @@ class Movies extends React.Component {
         return (
           <div>
       <h1 style={h1Styles.h1}> Owlet </h1>
-   <table style={tableStyles.table}>
+   <MDBTable autoWidth style={tableStyles.table}>
    <thead style={thStyles.thead}>
       <td style={tdStyles.td}>Name</td>
       <td style={tdStyles.td}>Rating</td>
@@ -145,7 +146,7 @@ class Movies extends React.Component {
            <tbody>
             { movieRows }
            </tbody>
-           </table>
+           </MDBTable>
            </div>
         )
     }
