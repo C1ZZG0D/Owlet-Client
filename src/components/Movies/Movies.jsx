@@ -134,7 +134,8 @@ class Movies extends React.Component {
         return (
           <div>
       <h1 style={h1Styles.h1}> Owlet </h1>
-   <MDBTable autoWidth style={tableStyles.table}>
+   <MDBTable class="table table-striped table-bordered table-sm" cellspacing="0"
+ autoWidth style={tableStyles.table}>
    <thead style={thStyles.thead}>
       <td style={tdStyles.td}>Name</td>
       <td style={tdStyles.td}>Rating</td>
