@@ -1,5 +1,5 @@
 MDBTable, td{
-    padding: 15px;
+    padding: 35px;
     padding-right: 105px;
     border-collapse: collapse;
     background-color: black;
@@ -36,7 +36,7 @@ tr {
 }
 
 table {
-    margin: 25vh auto;
+    margin: 40vh auto;
     position: relative;
     top: 0px;
     z-index: 2;

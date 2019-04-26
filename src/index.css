@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image : url("https://data.whicdn.com/images/309885955/original.gif"); width: 100%; height: auto;
   background-repeat: repeat;
-  background-size: cover;
+  background-size: contain;
 } 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -1,11 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
-import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
+import Movies from '../Movie/Movies';
+
 
 var clickStyles = {
     delete: {
 fontFamily: 'Roboto',
+width: '78px'
 
   }
 }
@@ -21,8 +23,6 @@ const Movie = (props) => {
              <td>{ props.movie.contentrating }</td>
              <td>{ props.movie.runtime }</td>
              <td scrollY>{ props.movie.description }</td>
-             <Button style={clickStyles.delete} color='warning'>Edit </Button>
-             <Button style={clickStyles.delete} color='danger'>Delete </Button>
          </tr>
      )
 }

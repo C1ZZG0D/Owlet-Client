@@ -1,6 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import moviePic from '../../assets/owli.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+//import { Button } from 'reactstrap';
 
 var navStyles = {
     nav: {
@@ -36,6 +38,7 @@ const Navbar = (props) => {
         <nav style={navStyles.nav}>
             <img className="nav-img"src={moviePic} alt="Movie" />
             <h1 color="gold"></h1>
+
         </nav>
     )
 }

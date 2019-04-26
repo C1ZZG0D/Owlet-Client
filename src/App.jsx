@@ -2,18 +2,45 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Auth from './components/Auth/Auth';
-import Movies from './components/Movies/Movies';
 import Sidebar from './components/Sidebar/Sidebar';
+import Movies from './components/Movies/Movie/Movies'
+import MovieEdit from './components/Movies/Movie/editMovie';
 
 class App extends Component {
   state = {
     sessionToken: undefined
-  }
+  };
 
-viewConductor = () => {
-return this.state.sessionToken !== undefined ? <Movies token = {this.state.sessionToken} /> :  <Auth tokenHandler = {this.storeSessionToken}/> }
+  viewConductor = () => {
+    return this.state.sessionToken !== undefined ? (
+      <Movies token={this.state.sessionToken} />
+    ) : (
+      <Auth tokenHandler={this.storeSessionToken} />
+    );
+  };
+
+  viewConductor = () => {
+    return this.state.sessionToken !== undefined ? (
+      <div>
+        {" "}
+        <Movies token={this.state.sessionToken} />{" "}
+        <div align="center">
+          <MovieEdit
+            token={this.state.sessionToken}
+            updateMoviesArray={this.fetchMovies}
+            tokenHandler={this.storeSessionToken}
+          />{" "}
+        </div>
+      </div>
+    ) : (
+      <Auth tokenHandler={this.storeSessionToken} />
+    );
+  };
+  
+
 
 storeSessionToken = (token) => {
+  localStorage.setItem('token',token)
   console.log('TOKEN',token)
   this.setState({
     sessionToken: token
